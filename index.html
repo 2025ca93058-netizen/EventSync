@@ -3,45 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EventSync - Discover and Register for Events</title>
+    <title>EventSync - Discover Events</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- Navigation Header -->
-    <header class="header">
+    <!-- Simple Header -->
+    <header>
         <div class="container">
-            <div class="nav">
-                <div class="logo">
-                    <h1>📅 EventSync</h1>
-                    <p class="tagline">Your Event Management Platform</p>
-                </div>
-                <nav class="nav-links">
-                    <a href="index.html" class="active">Events</a>
-                    <a href="dashboard.html">My Events</a>
-                </nav>
-            </div>
+            <h1>📅 EventSync</h1>
+            <nav>
+                <a href="index.html" class="active">Events</a>
+                <a href="dashboard.html">My Events</a>
+            </nav>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
+    <!-- Main Content -->
+    <main>
         <div class="container">
-            <h2>Discover Amazing Events</h2>
-            <p>Browse, register, and manage your event attendance all in one place</p>
-        </div>
-    </section>
-
-    <!-- Events List Section -->
-    <main class="main-content">
-        <div class="container">
-            <div class="events-header">
-                <h3>Upcoming Events</h3>
-                <p id="event-count">Loading events...</p>
-            </div>
+            <h2>Upcoming Events</h2>
             
-            <!-- Events will be dynamically loaded here -->
-            <div id="events-container" class="events-grid">
-                <!-- Event cards will be inserted by JavaScript -->
+            <!-- Events will be displayed here -->
+            <div id="events-list">
+                <!-- JavaScript will populate this -->
             </div>
         </div>
     </main>
@@ -50,55 +34,45 @@
     <div id="event-modal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <div id="modal-body">
+            <div id="modal-details">
                 <!-- Event details will be loaded here -->
             </div>
         </div>
     </div>
 
     <!-- Registration Modal -->
-    <div id="registration-modal" class="modal">
+    <div id="register-modal" class="modal">
         <div class="modal-content">
-            <span class="close-registration">&times;</span>
+            <span class="close-register">&times;</span>
             <h2>Register for Event</h2>
-            <form id="registration-form">
+            <form id="register-form">
                 <div class="form-group">
-                    <label for="name">Full Name *</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="email">Email Address *</label>
-                    <input type="email" id="email" name="email" required>
+                    <label>Full Name *</label>
+                    <input type="text" id="name" required>
                 </div>
                 
                 <div class="form-group">
-                    <label for="phone">Phone Number *</label>
-                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
-                    <small>Enter 10-digit phone number</small>
+                    <label>Email *</label>
+                    <input type="email" id="email" required>
                 </div>
                 
-                <input type="hidden" id="event-id" name="eventId">
-                
-                <div class="form-actions">
-                    <button type="submit" class="btn-primary">Complete Registration</button>
-                    <button type="button" class="btn-secondary" id="cancel-registration">Cancel</button>
+                <div class="form-group">
+                    <label>Phone (10 digits) *</label>
+                    <input type="tel" id="phone" pattern="[0-9]{10}" required>
                 </div>
+                
+                <input type="hidden" id="event-id">
+                
+                <button type="submit" class="btn-primary">Register</button>
             </form>
         </div>
     </div>
 
     <!-- Success Message -->
-    <div id="success-message" class="success-toast">
-        <span id="success-text"></span>
-    </div>
+    <div id="success-msg" class="message">Registration successful!</div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 EventSync | Academic Project - BITS Pilani</p>
-            <p>Agile Software Processes - Sprint 1 Deliverable</p>
-        </div>
+    <footer>
+        <p>&copy; 2026 EventSync - Sprint 1 MVP</p>
     </footer>
 
     <script src="js/events.js"></script>
