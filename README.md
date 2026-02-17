@@ -56,7 +56,7 @@ This is a **basic, working version** with core functionality only:
 - Duplicate submissions are prevented per registration/email.
 - Organizer can view feedback summary (avg rating, count, latest comments).
 
-### ✅ Feature 7: Register for Event (US-003)
+### ✅ Feature 7: Register for Event (US-007)
 - Analytics endpoint returns registration counts per event.
 - Analytics includes feedback stats (avg rating, response count).
 - Analytics includes notification delivery stats (sent/failed per event).
