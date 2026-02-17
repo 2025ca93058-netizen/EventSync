@@ -44,11 +44,11 @@ This is a **basic, working version** with core functionality only:
 ## What's Included (Sprint 2 Features)
 
 ### ✅ Feature 5: Event Notifications (Reminders + Updates) (US-005)
-o	Participants can opt-in/out of email notifications.
-o	Event organizers can send notifications to all registrants.
-o	Automated reminders are sent 24 hours before the event start time.
-o	Notification delivery is logged (sent/failed + timestamp).
-o	Notification content includes event title, date/time, and location.
+- Participants can opt-in/out of email notifications.
+- Event organizers can send notifications to all registrants.
+- Automated reminders are sent 24 hours before the event start time.
+- Notification delivery is logged (sent/failed + timestamp).
+- Notification content includes event title, date/time, and location.
 
 ### ✅ Feature 6: Feedback Forms (US-006)
 o	Organizer can enable/disable feedback for an event.
