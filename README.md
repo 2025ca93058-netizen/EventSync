@@ -57,11 +57,7 @@ o	Duplicate submissions are prevented per registration/email.
 o	Organizer can view feedback summary (avg rating, count, latest comments).
 
 ### ✅ Feature 7: Register for Event (US-003)
-o	Analytics endpoint returns registration counts per event.
-o	Analytics includes feedback stats (avg rating, response count).
-o	Analytics includes notification delivery stats (sent/failed per event).
-o	Results can be filtered by date range.
-o	Response format is consistent and documented.
+
 ---
 
 ## What's NOT Included (Sprint 2 Features)
