@@ -51,13 +51,17 @@ This is a **basic, working version** with core functionality only:
 - Notification content includes event title, date/time, and location.
 
 ### ✅ Feature 6: Feedback Forms (US-006)
-o	Organizer can enable/disable feedback for an event.
-o	Participant can submit a rating (1–5) and optional comment.
-o	Duplicate submissions are prevented per registration/email.
-o	Organizer can view feedback summary (avg rating, count, latest comments).
+- Organizer can enable/disable feedback for an event.
+- Participant can submit a rating (1–5) and optional comment.
+- Duplicate submissions are prevented per registration/email.
+- Organizer can view feedback summary (avg rating, count, latest comments).
 
 ### ✅ Feature 7: Register for Event (US-003)
-
+- Analytics endpoint returns registration counts per event.
+- Analytics includes feedback stats (avg rating, response count).
+- Analytics includes notification delivery stats (sent/failed per event).
+- Results can be filtered by date range.
+- Response format is consistent and documented.
 ---
 
 ## What's NOT Included (Sprint 2 Features)
@@ -72,12 +76,14 @@ These will be added in Sprint 2 based on feedback:
 ❌ Advanced error messages
 
 ## Sprint 2 refinements
+
 ✅ Search functionality  
 ✅ Filter by category  
 ✅ Filter by availability  
 ✅ Cancel registration  
 ❌ Loading states  
 ❌ Advanced error messages
+
 ---
 
 ## How to Run
