@@ -40,6 +40,28 @@ This is a **basic, working version** with core functionality only:
 - Displays registration details for each event
 - Empty state if no registrations
 
+
+## What's Included (Sprint 2 Features)
+
+### ✅ Feature 5: Event Notifications (Reminders + Updates) (US-005)
+o	Participants can opt-in/out of email notifications.
+o	Event organizers can send notifications to all registrants.
+o	Automated reminders are sent 24 hours before the event start time.
+o	Notification delivery is logged (sent/failed + timestamp).
+o	Notification content includes event title, date/time, and location.
+
+### ✅ Feature 6: Feedback Forms (US-006)
+o	Organizer can enable/disable feedback for an event.
+o	Participant can submit a rating (1–5) and optional comment.
+o	Duplicate submissions are prevented per registration/email.
+o	Organizer can view feedback summary (avg rating, count, latest comments).
+
+### ✅ Feature 7: Register for Event (US-003)
+o	Analytics endpoint returns registration counts per event.
+o	Analytics includes feedback stats (avg rating, response count).
+o	Analytics includes notification delivery stats (sent/failed per event).
+o	Results can be filtered by date range.
+o	Response format is consistent and documented.
 ---
 
 ## What's NOT Included (Sprint 2 Features)
@@ -53,6 +75,13 @@ These will be added in Sprint 2 based on feedback:
 ❌ Loading states  
 ❌ Advanced error messages
 
+## Sprint 2 refinements
+✅ Search functionality  
+✅ Filter by category  
+✅ Filter by availability  
+✅ Cancel registration  
+❌ Loading states  
+❌ Advanced error messages
 ---
 
 ## How to Run
@@ -145,7 +174,7 @@ npx http-server -p 8000
 - Safari 14+
 - Edge 90+
 
-### File Structure
+### File Structure after Sprint 1
 ```
 code/
 ├── index.html              # Homepage (event listing)
@@ -157,6 +186,7 @@ code/
     ├── app.js              # Main app logic
     └── dashboard.js        # Dashboard logic
 ```
+### File Structure after Sprint 2
 
 ### Data Storage
 
