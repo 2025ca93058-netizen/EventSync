@@ -4,6 +4,12 @@
 **Sprint:** 1 (MVP - Minimum Viable Product)  
 **Status:** Working Software - Ready for Demo
 
+# EventSync - Sprint 2 Final Product
+
+**Simple Event Management Platform**  
+**Sprint:** 2 (FInal Product)  
+**Status:** Working Software
+
 ---
 
 ## What's Included (Sprint 1 Features)
